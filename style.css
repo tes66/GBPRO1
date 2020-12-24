@@ -1,0 +1,101 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  background: #222222;
+  padding-top: 15px;
+}
+
+.navbar__wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar__icon {
+    width: 44px;
+    height: 44px;
+    background: #9c9c9c;
+}
+
+.navbar__icon.float-left {
+    margin-right: 20px;
+}
+
+.navbar__icon.float-right {
+    margin-left: 20px;
+}
+
+/*Atomic CSS*/
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.text--pink {
+    color: #F16D7F;
+}
+/*end atomic*/
+
+.section {
+    width: 100%;
+}
+
+.section--intro {
+    background: #F1E4E6;
+    height: 764px;
+    display: flex; /*Аккуратно*/
+    align-items: center;
+}
+
+.section--offers {
+    width: 100%;
+    height: 470px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section.section--offers {
+  width: 1142px;
+  height: 470px;
+  left: 231px;
+  top: 903px;
+}
+
+
+.section.section--features {
+    background: #222222;
+}
+
+/**Intro*/
+
+.intro__photo {
+    max-height: 100%;
+    width: auto;
+}
+
+.intro__brand {
+  margin-left: 92px;
+  position: relative;
+}
+
+.intro__title, .intro__subtitle {
+    margin: 0;
+}
+
+.intro__brand::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    width: 12px;
+    height: 100%;
+    background-color: #F16D7F;
+  }
