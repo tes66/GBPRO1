@@ -1,101 +1,86 @@
-*, *::after, *::before {
-    box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.navbar {
-  width: 100%;
-  height: 75px;
-  background: #222222;
-  padding-top: 15px;
+html, body{
+    height: 100%;
+}
+.body{
+    font-family: Montserrat;
+    font-size: 14px;
 }
 
-.navbar__wrapper {
-    width: 100%;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.navbar__icon {
-    width: 44px;
-    height: 44px;
-    background: #9c9c9c;
-}
-
-.navbar__icon.float-left {
-    margin-right: 20px;
-}
-
-.navbar__icon.float-right {
-    margin-left: 20px;
-}
-
-/*Atomic CSS*/
-.float-right {
-    float: right;
-}
-
-.float-left {
-    float: left;
-}
-
-.text--pink {
-    color: #F16D7F;
-}
-/*end atomic*/
-
-.section {
-    width: 100%;
-}
-
-.section--intro {
-    background: #F1E4E6;
-    height: 764px;
-    display: flex; /*Аккуратно*/
-    align-items: center;
-}
-
-.section--offers {
-    width: 100%;
-    height: 470px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section.section--offers {
-  width: 1142px;
-  height: 470px;
-  left: 231px;
-  top: 903px;
-}
-
-
-.section.section--features {
-    background: #222222;
-}
-
-/**Intro*/
-
-.intro__photo {
-    max-height: 100%;
-    width: auto;
-}
-
-.intro__brand {
-  margin-left: 92px;
+.conteiner {
+  border: 5px solid red;
+  width: 1600px;
+  margin: 0 auto;
+  height: 2800px;
   position: relative;
 }
 
-.intro__title, .intro__subtitle {
-    margin: 0;
+.header {
+  background: #222;
+  width: 100%
+  height 75px;
 }
 
-.intro__brand::before {
-    content: '';
-    position: absolute;
-    left: -28px;
-    width: 12px;
-    height: 100%;
-    background-color: #F16D7F;
-  }
+.background__main {
+  height: 764px;
+  background: #F1E4E6;
+  position: relative;
+}
+
+.text_main{
+  position: absolute;
+  left: 55.75%;
+  right: 20.69%;
+  top: 50%;
+  bottom: 86.86%;
+}
+
+.offer {
+  width: 1142px;
+  height: 470px;
+  padding-top: 64px;
+  margin: auto;
+  position: relative;
+}
+
+.women {
+  height: 260px;
+  width: 360px;
+  position: absolute;
+}
+
+.men {
+  height: 260px;
+  width: 360px;
+  position: absolute;
+}
+
+.kids {
+  height: 260px;
+  width: 360px;
+  position: absolute;
+}
+
+.accesories {
+  height: 180px;
+  width: 1140px;
+  position: absolute;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
