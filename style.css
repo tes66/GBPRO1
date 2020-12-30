@@ -46,35 +46,37 @@ html, body{
 }
 
 .offer {
-  width: 1142px;
+  display: flex;
+	flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1142px;
   height: 470px;
   padding-top: 64px;
-  margin: auto;
   position: relative;
 }
 
+.item{
+  flex:1 1 calc(33.33% - 50px); /* отнимем margin и скажем растягиваться */
+	margin:5px;
+	box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
+  text-align:center;
+  font-size:100%;
+  }
+
 .women {
-  height: 260px;
-  width: 360px;
-  position: absolute;
+  background-image: url(img/Women.jpg);
 }
 
 .men {
-  height: 260px;
-  width: 360px;
-  position: absolute;
+  background-image: url(img/men.jpg);
 }
 
 .kids {
-  height: 260px;
-  width: 360px;
-  position: absolute;
+  background-image: url(img/kids.jpg);
 }
 
 .accesories {
-  height: 180px;
-  width: 1140px;
-  position: absolute;
+  background-image: url(img/accesories.jpg);
 }
 
 .float-left {
