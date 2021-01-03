@@ -146,6 +146,26 @@ a {
   height: 448px;
   background-image: url(img/footer_up.jpg);
   opacity: 70%;
+  display: flex;
+}
+
+.subtitle_info {
+  flex:1 1 calc(50% - 54px);
+  margin-left: 230px;
+  margin-top: 103px;
+  padding: 0px 10px 0px 15px;
+  text-align: center;
+
+}
+
+.subtitle {
+  flex:1 1 calc(50% - 54px);
+  margin-left: 230px;
+  margin-top: 103px;
+  padding: 0px 10px 0px 15px;
+  text-align: center;
+
+
 }
 
 .futured_items {
