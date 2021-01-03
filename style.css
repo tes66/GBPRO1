@@ -93,8 +93,52 @@ a {
 }
 
 .feature {
+  display: flex;
   height: 341px;
   background-color: #222224;
+}
+
+.delivery {
+  margin-left: 230px;
+  margin-top: 103px;
+  flex:1 1 calc(33.33% - 50px)
+
+}
+
+.sales {
+  margin-top: 103px;
+  flex:1 1 calc(33.33% - 50px)
+}
+
+.quality {
+  margin-top: 103px;
+  margin-right: 230px;
+  flex:1 1 calc(33.33% - 50px)
+}
+
+.feature img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.feature h4 {
+  font-size: 35px;
+  font-family: Lato;
+  color: #FBFBFB;
+  letter-spacing: 0.75px;
+  text-align: center;
+  margin-bottom: 16px;
+
+}
+
+.feature p {
+  margin-top: 16px;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: #9f9f9f;
 }
 
 .frame {
@@ -231,6 +275,8 @@ a {
   color: #ffffff;
   background: #FF6A6A;
 }
+
+
 
 footer {
   min-height: 537px;
